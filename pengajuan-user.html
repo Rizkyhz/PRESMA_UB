@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pengajuan Prestasi</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style-dashboard.css" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar" style="background-color: #003366">
+        <div class="p-4 pt-5">
+          <a
+            href="#"
+            class="img logo rounded-circle mb-5"
+            style="background-image: url(img/logo-prestasi.png)"
+          ></a>
+          <ul class="list-unstyled components mb-5">
+            <li class="active"></li>
+            <li>
+              <a href="dash-user.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="edit-user.html">Edit Profil</a>
+            </li>
+            <li>
+              <a href="pengajuan-user.html">Pengajuan Prestasi</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button
+              class="btn btn-dark d-inline-block d-lg-none ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-secondary" href="index-user.html">Home</a>
+                </li>
+                <li class="nav-item dropdown text-secondary">
+                  <a
+                    class="nav-link dropdown-toggle text-secondary"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Prestasi
+                  </a>
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="user-data-prestasi.html"
+                      >Data Prestasi</a
+                    >
+                    <a class="dropdown-item" href="user-galeri-prestasi.html"
+                      >Galeri Prestasi</a
+                    >
+                    <a class="dropdown-item" href="user-grafik-prestasi.html"
+                      >Grafik Data Prestasi</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown text-secondary">
+                  <a
+                    class="nav-link dropdown-toggle text-secondary"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Lainnya
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="user-info-lomba.html"
+                      >Informasi Lomba</a
+                    >
+                    <a class="dropdown-item" href="pengajuan-user.html"
+                      >Pengajuan Prestasi</a
+                    >
+                  </div>
+                  <li class="nav-item active">
+                    <a class="nav-link text-secondary" href="user-bantuan.html">Bantuan</a>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-xl px- mt-0">
+          <!-- Account page navigation-->
+
+          <hr class="mt-0 mb-4" />
+          <div class="row">
+            <div class="col-12">
+              <!-- Account details card-->
+              <div class="card mb-4">
+                <div class="card-header">Form Pengajuan Prestasi</div>
+                <div class="card-body">
+                  <form id="yourFormId">
+                    <!-- Form Group (email address)-->
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputName">Nama</label>
+                      <input
+                        class="form-control"
+                        id="inputName"
+                        type="text"
+                        placeholder="Masukkan Nama"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputNIM"
+                        >NIM (Nomor Induk Mahasiswa)</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputNIM"
+                        type="text"
+                        placeholder="Masukkan NIM"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputAngkatan">Angkatan</label>
+                      <input
+                        class="form-control"
+                        id="inputAngkatan"
+                        type="text"
+                        placeholder="Masukkan Tahun Angkatan"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputProgramStudi"
+                        >Program Studi</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputProgramStudi"
+                        type="text"
+                        placeholder="Masukkan Program Studi"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputBidangMinat"
+                        >Bidang Minat</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputBidangMinat"
+                        type="text"
+                        placeholder="Masukkan Bidang Minat"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputAchievement"
+                        >Capaian Prestasi</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputAchievement"
+                        type="text"
+                        placeholder="Masukkan Capaian Prestasi"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputTingkat">Tingkat</label>
+                      <input
+                        class="form-control"
+                        id="inputTingkat"
+                        type="text"
+                        placeholder="Masukkan Tingkat Lomba"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="small mb-1" for="inputNamaKegiatan"
+                        >Nama Kegiatan</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputNamaKegiatan"
+                        type="text"
+                        placeholder="Masukkan Nama Kegiatan"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputTahunKegiatan"
+                        >Tahun Kegiatan</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputTahunKegiatan"
+                        type="text"
+                        placeholder="Masukkan Tahun Kegiatan"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1">Delegasi ORMAWA</label>
+                      <div>
+                        <input
+                          type="radio"
+                          id="yesDelegasi"
+                          name="delegasiOrmawa"
+                          value="yes"
+                        />
+                        <label for="yesDelegasi">Yes</label>
+
+                        <input
+                          type="radio"
+                          id="noDelegasi"
+                          name="delegasiOrmawa"
+                          value="no"
+                        />
+                        <label for="noDelegasi">No</label>
+                      </div>
+                    </div>
+
+                    <div
+                      class="mb-3"
+                      id="namaOrmawaField"
+                      style="display: none"
+                    >
+                      <label class="mb-1" for="inputNamaOrmawa"
+                        >Nama ORMAWA</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputNamaOrmawa"
+                        type="text"
+                        placeholder="Masukkan Nama ORMAWA"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputPembimbing"
+                        >Pembimbing</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputPembimbing"
+                        type="text"
+                        placeholder="Masukkan Nama Pembimbing"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputTempatKegiatan"
+                        >Tempat Kegiatan</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputTempatKegiatan"
+                        type="text"
+                        placeholder="Masukkan Tempat Kegiatan"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputPenyelenggara"
+                        >Penyelenggara</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputPenyelenggara"
+                        type="text"
+                        placeholder="Masukkan Penyelenggara Lomba"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputDateRange"
+                        >Waktu Kegiatan (tgl1 s/d tgl2)</label
+                      >
+                      <div class="input-group">
+                        <input
+                          class="form-control"
+                          id="inputTanggalAwal"
+                          type="date"
+                          placeholder="Masukkan Tanggal Mulai"
+                          required
+                        />
+                        <span class="input-group-text">s/d</span>
+                        <input
+                          class="form-control"
+                          id="inputTanggalAkhir"
+                          type="date"
+                          placeholder="Masukkan Tanggal Selesai"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputJenisKepesertaan"
+                        >Jenis Kepesertaan</label
+                      >
+                      <div class="d-flex">
+                        <select
+                          class="form-select"
+                          id="inputJenisKepesertaan"
+                          onchange="showMembersInput()"
+                        >
+                          <option value="" selected disabled>Pilih</option>
+                          <option value="individu">Individu</option>
+                          <option value="kelompok">Kelompok</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div
+                      class="mb-3"
+                      id="inputJumlahAnggota"
+                      style="display: none"
+                    >
+                      <label class="mb-1" for="inputJumlahAnggota"
+                        >Jumlah Anggota (for Kelompok)</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputJumlahAnggota"
+                        type="number"
+                        placeholder="Masukkan Jumlah Anggota"
+                        min="1"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputCertificate"
+                        >Scan Sertifikat</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputCertificate"
+                        type="file"
+                        accept="image/*"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputLinkInformasi"
+                        >URL Informasi Lomba</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputLinkInformasi"
+                        type="url"
+                        placeholder="Masukkan url informasi lomba"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputDokumentasi"
+                        >Dokumentasi Kegiatan</label
+                      >
+                      <input
+                        class="form-control"
+                        id="inputDokumentasi"
+                        type="file"
+                        accept="image/*"
+                        multiple
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="mb-1" for="inputDeskripsiKegiatan"
+                        >Deskripsi Kegiatan</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="inputDeskripsiKegiatan"
+                        placeholder="Masukkan Deskripsi Kegiatan"
+                        required
+                      >
+                      Deskripsi Kegiatan</textarea
+                      >
+                    </div>
+
+                    <!-- Save changes button-->
+                    <div class="mb-3">
+                      <button
+                        class="btn btn-secondary"
+                        type="button"
+                        onclick="clearForm()"
+                      >
+                        Clear Form
+                      </button>
+                      <button
+                        class="btn text-white"
+                        type="submit"
+                        style="background-color: #003366"
+                      >
+                        Kirim
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main-dash.js"></script>
+    
+  </body>
+</html>

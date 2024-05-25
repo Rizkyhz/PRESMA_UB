@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard Mahasiswa</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style-dashboard.css" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar" style="background-color: #003366">
+        <div class="p-4 pt-5">
+          <a
+            href="#"
+            class="img logo rounded-circle mb-5"
+            style="background-image: url(img/logo-prestasi.png)"
+          ></a>
+          <ul class="list-unstyled components mb-5">
+            <li class="active"></li>
+            <li>
+              <a href="dash-user.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="edit-user.html">Edit Profile</a>
+            </li>
+            <li>
+              <a href="pengajuan-user.html">Pengajuan Prestasi</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-chevron-right"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button
+              class="btn btn-dark d-inline-block d-lg-none ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-secondary" href="index-user.html">Home</a>
+                </li>
+                <li class="nav-item dropdown text-secondary">
+                  <a
+                    class="nav-link dropdown-toggle text-secondary"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Prestasi
+                  </a>
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="user-data-prestasi.html"
+                      >Data Prestasi</a
+                    >
+                    <a class="dropdown-item" href="user-galeri-prestasi.html"
+                      >Galeri Prestasi</a
+                    >
+                    <a class="dropdown-item" href="user-grafik-prestasi.html"
+                      >Grafik Data Prestasi</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown text-secondary">
+                  <a
+                    class="nav-link dropdown-toggle text-secondary"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Lainnya
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="user-info-lomba.html"
+                      >Informasi Lomba</a
+                    >
+                    <a class="dropdown-item" href="pengajuan-user.html"
+                      >Pengajuan Prestasi</a
+                    >
+                  </div>
+                  <li class="nav-item active">
+                    <a class="nav-link text-secondary" href="user-bantuan.html">Bantuan</a>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div
+          class="card text-white"
+          style="background-color: #003366; border-radius: 10px"
+        >
+          <div class="card-header">PROFIL</div>
+          <dif class="d-flex flex-wrap">
+            <div
+              class="ms-3 my-3"
+              style="margin-left: 20px; margin-top: 17px; margin-bottom: 17px"
+            >
+              <img src="img/profile-user.png" alt="" style="width: 100px" />
+            </div>
+            <div class="card-body">
+              <h4 class="text-white">Septian Ghuslal Nur Naim</h4>
+              <p>223140707111112</p>
+              <p>D-3 Teknologi Informasi / Teknologi Informasi dan Komputer</p>
+            </div>
+          </dif>
+        </div>
+
+        <br />
+
+        <div
+          class="card text-white col-md-6"
+          style="border-radius: 10px; background-color: #ff9900"
+        >
+          <div class="card-header">Jumlah Prestasi</div>
+          <div class="d-flex flex-wrap">
+            <div class="ms-3 my-3">
+              <img src="img/piala.png" alt="" style="width: 100px" />
+            </div>
+            <div class="card-body">
+              <h1>5 Prestasi</h1>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <thead
+              class="text-center"
+              style="background-color: #003366; color: #fff"
+            >
+              <tr>
+                <th>No</th>
+                <th>Capaian</th>
+                <th>Nama Prestasi</th>
+                <th>Tingkat</th>
+                <th>Sertifikat</th>
+                <th>Status Pengajuan</th>
+                <th>Surat Tugas</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <th>1</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>
+                  <button
+                    style="background-color: green; color: white; border: none"
+                  >
+                    Berhasil
+                  </button>
+                </th>
+                <th>
+                  <!-- Menampilkan gambar berdasarkan jalur file atau referensi yang tersimpan -->
+                  <img
+                    src="/path/to/admin_uploaded_image.jpg"
+                    alt="Surat Tugas"
+                  />
+                </th>
+              </tr>
+              <tr>
+                <th>1</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>
+                  <button
+                    style="background-color: blue; color: white; border: none"
+                  >
+                    Dalam Antrean
+                  </button>
+                </th>
+                <th>
+                  <!-- Menampilkan gambar berdasarkan jalur file atau referensi yang tersimpan -->
+                  <img
+                    src="/path/to/admin_uploaded_image.jpg"
+                    alt="Surat Tugas"
+                  />
+                </th>
+              </tr>
+              <tr>
+                <th>1</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>
+                  <button
+                    style="background-color: yellow; color: black; border: none"
+                  >
+                    Proses
+                  </button>
+                </th>
+                <th>
+                  -
+                </th>
+              </tr>
+              <tr>
+                <th>1</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>tbody</th>
+                <th>
+                  <button
+                    style="background-color: red; color: white; border: none"
+                  >
+                    Gagal
+                  </button>
+                </th>
+                <th>
+                  -
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main-dash.js"></script>
+  </body>
+</html>
